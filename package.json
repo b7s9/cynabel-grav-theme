@@ -1,0 +1,15 @@
+{
+  "name": "cynabel-from-scratch",
+  "version": "1.0.0",
+  "description": "custom cynabel theme",
+  "main": "gulpfile.js",
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "gulp": "^4.0.2"
+  },
+  "scripts": {
+    "dev": "gulp watch",
+    "build": "gulp build"
+  }
+}
