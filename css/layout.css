@@ -1,0 +1,12 @@
+main {
+	max-width: 60rem;
+}
+
+.header .logo {
+	font-size: 1.7rem;
+	text-transform: uppercase;
+}
+
+.header .padding {
+	padding: 1rem 0;
+}

@@ -1,0 +1,11 @@
+@import url('dark-scheme.css') (prefers-color-scheme: dark);
+@import url('light-scheme.css') (prefers-color-scheme: light);
+
+a {
+	color: #1F8CD6;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #175E91;
+}
