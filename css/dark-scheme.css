@@ -1,4 +1,57 @@
+/* MAIN COLOR SCHEME */
+
 body {
-	background: #272727;
+	font-size: 100%;
+	background: #242424;
 	color: #f5f5f5;
+	font-size: 110%;
+}
+
+a {
+	border-bottom: 1px solid transparent;
+	color: rgb(113, 183, 230);
+	transition: all 119ms ease-in-out;
+}
+
+a:hover {
+	border-bottom: 1px solid rgb(49, 116, 163);
+}
+
+
+/* UTILITIES */
+
+.notices.yellow {
+	background: #2f2d26;
+	border-left: 10px solid #c8bc14;
+	color: #dfd213;
+}
+
+.notices.red {
+	background: #2f2a2a;
+	border-left: 10px solid #b52b27;
+	color: #df7876;
+}
+
+.notices.blue {
+	background: #2a2f31;
+	border-left: 10px solid #28a1c5;
+	color: #6fc4dd;
+}
+
+.notices.green {
+	background: #2f312f;
+	border-left: 10px solid #3d8b3d;
+	color: #5cb85c;
+}
+
+.main-nav ul li.selected>a {
+
+	background-color: #313131;
+	color: #2F72A2;
+
+}
+
+.mailchimp input.email {
+	background: #242424;
+	color: white;
 }

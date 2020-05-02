@@ -1,4 +1,15 @@
 body {
-	background: #f5f5f5;
+	background: #f7f7f7;
 	color: #272727;
+}
+
+
+a {
+	border-bottom: 1px solid transparent;
+	color: #1F8CD6;
+	transition: border 119ms ease-in-out;
+}
+
+a:hover {
+	border-bottom: 1px solid #175E91;
 }

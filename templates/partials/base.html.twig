@@ -17,9 +17,9 @@
 {% block stylesheets %}
     {% do assets.addCss('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css', 99) %}
     
-    {% do assets.addCss("theme://css/#{grav.theme.config.color_scheme}.css", 97) %}
-    
     {% do assets.addCss('theme://css/custom.css', 98) %}
+    
+    {% do assets.addCss("theme://css/#{grav.theme.config.color_scheme}.css", 97) %}
 {% endblock %}
 
 {% block javascripts %}
@@ -34,8 +34,8 @@
 <body id="top" class="{{ page.header.body_classes }} {{ grav.theme.config.color_scheme }}">
 
 {% block header %}
-    <div class="header">
-        <div class="wrapper padding">
+    <header class="masthead">
+        <div class="wrapper">
             <a class="logo left" href="{{ home_url }}">
                 {{ config.site.title }}
             </a>
@@ -45,20 +45,20 @@
             </nav>
             {% endblock %}
         </div>
-    </div>
+    </header>
 {% endblock %}
 
 {% block body %}
     <section id="body">
-        <div class="wrapper padding">
+        <main>
         {% block content %}{% endblock %}
-        </div>
+        </main>
     </section>
 {% endblock %}
 
 {# {% block footer %}
     <div class="footer text-center">
-        <div class="wrapper padding">
+        <div class="">
         </div>
     </div>
 {% endblock %} #}
