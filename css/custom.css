@@ -1,7 +1,14 @@
+/* externally created */
+@import 'global-vars.css';
 @import 'reset.css';
-@import 'system.css';
+/* @import 'system.css'; */
 @import 'signup-form.css';
 
+/* anything aside from color or font */
 @import 'layout.css';
+
+/* rules directly related to fonts. font declarations, line height, transformations, styling, weight, etc. */
 @import 'typography.css';
-/* @import 'color-scheme.css'; */
+
+/* animations */
+/* @import 'animations.css'; */
