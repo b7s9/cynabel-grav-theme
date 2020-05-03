@@ -16,8 +16,31 @@
 
 {% block stylesheets %}
     {% do assets.addCss('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css', 99) %}
-    
+
     {% do assets.addCss('theme://css/custom.css', 98) %}
+
+    <script>
+        window.FontAwesomeConfig = {
+            searchPseudoElements: true
+        }
+    </script>
+    <script>
+        function getOSColorScheme() {
+            if (window.matchMedia === undefined || !window.matchMedia) {
+                return 'light';
+            }
+
+            var mediaMatches = window.matchMedia('(prefers-color-scheme: dark)');
+
+            if (mediaMatches.matches) {
+                return 'dark';
+            }
+
+            return 'light';
+        }
+
+        console.log(getOSColorScheme())
+    </script>
     
     {% do assets.addCss("theme://css/#{grav.theme.config.color_scheme}.css", 97) %}
 {% endblock %}
@@ -36,14 +59,19 @@
 {% block header %}
     <header class="masthead">
         <div class="wrapper">
-            <a class="logo left" href="{{ home_url }}">
-                {{ config.site.title }}
-            </a>
-            {% block header_navigation %}
-            <nav class="main-nav">
-                {% include 'partials/navigation.html.twig' %}
-            </nav>
-            {% endblock %}
+            <div class="padding">
+                <div class="logo left">
+                    <a href="{{ home_url }}">
+                	    <img src="{{ url('theme://images/square-logo.png')  }}" alt="{{ site.name }}" />
+                    </a>
+                    {# {% include 'partials/logo.html.twig' %} #}
+                </div>
+                {% block header_navigation %}
+                <nav class="main-nav">
+                    {% include 'partials/navigation.html.twig' %}
+                </nav>
+                {% endblock %}
+            </div>
         </div>
     </header>
 {% endblock %}
