@@ -1,12 +1,164 @@
-main {
+/* ----------------------------------------------------- */
+/* Layout */
+/* ----------------------------------------------------- */
+
+section#body {
 	max-width: 60rem;
+	margin: 0 auto;
 }
 
-.header .logo {
+main {
+	padding: 1rem;
+}
+
+iframe {
+	max-width: 100%;
+}
+
+blockquote {
+	border-left: 10px solid #eee;
+	margin: 0;
+	padding: 0 2rem;
+}
+
+header.masthead .wrapper {
+	max-width: 60rem;
+	margin: 0 auto;
+}
+
+header.masthead .padding {
+	display: flex;
+	justify-content: space-between;
+	padding: 1rem;
+}
+
+header.masthead nav {
+	align-self: center;
+}
+
+header.masthead .logo {
+	display: inline-block;
 	font-size: 1.7rem;
 	text-transform: uppercase;
 }
 
-.header .padding {
-	padding: 1rem 0;
+header.masthead .logo a {
+	display: block;
+	height: 80px;
+}
+
+header.masthead .logo img {
+	height: 100%;
+	width: auto;
+}
+
+/* ----------------------------------------------------- */
+/* Markdown Notices (light) */
+/* ----------------------------------------------------- */
+
+.notices {
+	padding: 1px 1px 1px 30px;
+	margin: 15px 0;
+}
+
+.notices p {
+	padding: 1rem;
+}
+
+.notices.yellow {
+	border-left: 10px solid #f0ad4e;
+	background: #fcf8f2;
+	color: #df8a13;
+}
+
+.notices.red {
+	border-left: 10px solid #d9534f;
+	background: #fdf7f7;
+	color: #b52b27;
+}
+
+.notices.blue {
+	border-left: 10px solid #5bc0de;
+	background: #f4f8fa;
+	color: #28a1c5;
+}
+
+.notices.green {
+	border-left: 10px solid #5cb85c;
+	background: #f1f9f1;
+	color: #3d8b3d;
+}
+
+/* ----------------------------------------------------- */
+/* Menu Settings */
+/* ----------------------------------------------------- */
+
+.main-nav ul {
+	text-align: center;
+	letter-spacing: -1em;
+	margin: 0;
+	padding: 0;
+}
+
+.main-nav ul li {
+	display: inline-block;
+	letter-spacing: normal;
+}
+
+.main-nav ul li a {
+	position: relative;
+	display: block;
+	line-height: 45px;
+	padding: 0 20px;
+	white-space: nowrap;
+}
+
+.main-nav>ul>li>a {
+	border-radius: 2px;
+}
+
+/* Dropdown CSS */
+.main-nav ul li {
+	position: relative;
+}
+
+.main-nav ul li ul {
+	position: absolute;
+	min-width: 100%;
+	text-align: left;
+	z-index: 999;
+	display: none;
+}
+
+.main-nav ul li ul li {
+	display: block;
+}
+
+/* Dropdown CSS */
+.main-nav ul li ul ul {
+	left: 100%;
+	top: 0;
+}
+
+/* Active on Hover */
+.main-nav li:hover>ul {
+	display: block;
+}
+
+/* Child Indicator */
+.main-nav .has-children>a {
+	padding-right: 30px;
+}
+
+.main-nav .has-children>a:after {
+	font-family: FontAwesome;
+	content: '\f107';
+	position: absolute;
+	display: inline-block;
+	right: 8px;
+	top: 0;
+}
+
+.main-nav .has-children .has-children>a:after {
+	content: '\f105';
 }

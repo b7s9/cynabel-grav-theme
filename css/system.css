@@ -1,8 +1,6 @@
 /* Core Stuff */
-* {
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
+iframe {
+	max-width: 100%;
 }
 
 pre {
@@ -19,11 +17,44 @@ blockquote {
 
 /* Utility Classes */
 .wrapper {
-	margin: 0 3rem;
+	margin: 1rem;
 }
 
-.padding {
-	padding: 3rem 1rem;
+.wrapper-y {
+	margin: 0 1rem;
+}
+
+.notices {
+	padding: 1px 1px 1px 30px;
+	margin: 15px 0;
+}
+
+.notices p {
+	padding: 1rem;
+}
+
+.notices.yellow {
+	border-left: 10px solid #f0ad4e;
+	background: #fcf8f2;
+	color: #df8a13;
+}
+
+.notices.red {
+	border-left: 10px solid #d9534f;
+	background: #fdf7f7;
+	color: #b52b27;
+}
+
+.notices.blue {
+	border-left: 10px solid #5bc0de;
+	background: #f4f8fa;
+	color: #28a1c5;
+}
+
+.notices.green {
+	border-left: 10px solid #5cb85c;
+	background: #f1f9f1;
+	color: #3d8b3d;
 }
 
 .left {
@@ -63,7 +94,7 @@ blockquote {
 	position: relative;
 	display: block;
 	line-height: 45px;
-	color: #fff;
+	color: #f7f7f7;
 	padding: 0 20px;
 	white-space: nowrap;
 }
@@ -79,7 +110,7 @@ blockquote {
 
 /* Selected Dropdown nav item */
 .main-nav ul li.selected>a {
-	background-color: #fff;
+	background-color: #f7f7f7;
 	color: #175E91;
 }
 
@@ -119,7 +150,7 @@ blockquote {
 }
 
 .main-nav .has-children>a:after {
-	font-family: FontAwesome;
+	font-family: 'Font Awesome 5 Free';
 	content: '\f107';
 	position: absolute;
 	display: inline-block;
