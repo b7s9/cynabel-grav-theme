@@ -1,24 +1,62 @@
-/* MAIN COLOR SCHEME */
+/* ----------------------------------------------------- */
+/* Tags */
+/* ----------------------------------------------------- */
 
 body {
 	font-size: 100%;
-	background: #242424;
-	color: #f5f5f5;
+	background: var(--black);
+	color: var(--white-alt);
 	font-size: 110%;
 }
 
 a {
-	border-bottom: 1px solid transparent;
-	color: rgb(113, 183, 230);
+	border-bottom: 1px solid rgb(49, 116, 163);
+	color: var(--primary-light);
 	transition: all 119ms ease-in-out;
 }
 
 a:hover {
-	border-bottom: 1px solid rgb(49, 116, 163);
+	border-bottom: 1px solid transparent;
+}
+
+/* ----------------------------------------------------- */
+/* Masthead, Nav */
+/* ----------------------------------------------------- */
+
+header.masthead {
+	background-color: var(--primary-dark-alt);
+}
+
+header.masthead .logo {
+	color: var(--white);
+}
+
+.main-nav ul li a {
+	border-color: transparent;
+	background-color: var(--primary-dark);
+	color: var(--white);
+}
+
+/*Active dropdown nav item */
+.main-nav ul li:hover>a {
+	background-color: var(--primary-light);
+	color: var(--white);
+}
+
+/* Selected Dropdown nav item */
+.main-nav ul li.selected>a {
+	background-color: var(--primary-dark-alt);
+	color: var(--white-alt);
+}
+
+.main-nav ul li ul {
+	background-color: var(--primary-light);
 }
 
 
-/* UTILITIES */
+/* ----------------------------------------------------- */
+/* Utitlities */
+/* ----------------------------------------------------- */
 
 .notices.yellow {
 	background: #2f2d26;
@@ -42,13 +80,6 @@ a:hover {
 	background: #2f312f;
 	border-left: 10px solid #3d8b3d;
 	color: #5cb85c;
-}
-
-.main-nav ul li.selected>a {
-
-	background-color: #313131;
-	color: #2F72A2;
-
 }
 
 .mailchimp input.email {

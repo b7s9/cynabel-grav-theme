@@ -1,15 +1,51 @@
+/* ----------------------------------------------------- */
+/* Tags */
+/* ----------------------------------------------------- */
 body {
-	background: #f7f7f7;
-	color: #272727;
+	background: var(--white);
+	color: var(--black);
 }
 
-
 a {
-	border-bottom: 1px solid transparent;
-	color: #1F8CD6;
+	border-bottom: 1px solid #175E91;
+	color: var(--primary-dark);
 	transition: border 119ms ease-in-out;
 }
 
 a:hover {
-	border-bottom: 1px solid #175E91;
+	border-bottom: 1px solid transparent;
+}
+
+/* ----------------------------------------------------- */
+/* Masthead, Nav */
+/* ----------------------------------------------------- */
+
+header.masthead {
+	background-color: var(--primary-light);
+}
+
+header.masthead .logo {
+	color: var(--black);
+}
+
+.main-nav ul li a {
+	border-color: transparent;
+	background-color: var(--white);
+	color: var(--primary-dark-alt);
+}
+
+/*Active dropdown nav item */
+.main-nav ul li:hover>a {
+	background-color: var(--primary-dark);
+	color: var(--white);
+}
+
+/* Selected Dropdown nav item */
+.main-nav ul li.selected>a {
+	background-color: var(--primary-light);
+	color: var(--black);
+}
+
+.main-nav ul li ul {
+	background-color: var(--primary-light);
 }
