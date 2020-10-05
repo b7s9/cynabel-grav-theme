@@ -16,13 +16,14 @@ iframe {
 }
 
 div.gallery+p {
-	display: flex;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-gap: 1rem;
+	margin: 1rem 0;
 }
 
 div.gallery+p a {
 	border: none;
-	padding: 1rem;
-	width: 50%;
 }
 
 blockquote {
