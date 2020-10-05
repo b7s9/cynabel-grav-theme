@@ -15,6 +15,16 @@ iframe {
 	max-width: 100%;
 }
 
+div.gallery+p {
+	display: flex;
+}
+
+div.gallery+p a {
+	border: none;
+	padding: 1rem;
+	width: 50%;
+}
+
 blockquote {
 	border-left: 10px solid #eee;
 	margin: 0;
