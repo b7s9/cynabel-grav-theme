@@ -3,7 +3,7 @@
 	display: block;
 	position: relative;
 	text-align: left;
-	padding: 10px 0 10px 3%
+	padding: 1rem 0;
 }
 
 #mc_embed_signup h2 {
@@ -84,8 +84,8 @@
 	padding: 0 0.4em;
 	margin: 0 4% 10px 0;
 	min-height: 32px;
-	width: 58%;
-	min-width: 130px;
+	width: 100%;
+	min-width: 90px;
 	-webkit-border-radius: 3px;
 	-moz-border-radius: 3px;
 	border-radius: 3px;
@@ -93,7 +93,7 @@
 
 #mc_embed_signup input.button {
 	display: block;
-	width: 35%;
+	width: 100%;
 	margin: 0 0 10px 0;
 	min-width: 90px;
 }
@@ -134,4 +134,12 @@
 	margin-left: 1.05em;
 	text-align: left;
 	padding: .5em 0;
+}
+
+@media screen and (min-width: 768px) {
+
+	#mc_embed_signup input.email,
+	#mc_embed_signup input.button {
+		width: 40%;
+	}
 }
