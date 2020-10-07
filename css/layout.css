@@ -134,11 +134,12 @@ header.masthead .logo img {
 }
 
 .main-nav ul li ul {
-	position: absolute;
+	display: none;
 	min-width: 100%;
+	position: absolute;
+	right: 0;
 	text-align: left;
 	z-index: 999;
-	display: none;
 }
 
 .main-nav ul li ul li {
@@ -147,7 +148,7 @@ header.masthead .logo img {
 
 /* Dropdown CSS */
 .main-nav ul li ul ul {
-	left: 100%;
+	right: 100%;
 	top: 0;
 }
 
@@ -171,5 +172,12 @@ header.masthead .logo img {
 }
 
 .main-nav .has-children .has-children>a:after {
-	content: '\f105';
+	content: '\f104';
+}
+
+@media screen and (max-width: 480px) {
+	.main-nav ul li ul ul {
+		right: initial;
+		top: initial;
+	}
 }
